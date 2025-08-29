@@ -3,7 +3,7 @@
 ## Descrição do Projeto
 
 
-O projeto em questão é a sua solução de um desafio proposto pelo Itaú para uma Vaga de Desenvolvimento Backend Java. Abaixo deixo o link do desafio para que você posso ver e realizá-lo também
+O projeto em questão é a sua solução de um desafio proposto pelo Itaú para uma Vaga de Desenvolvimento Backend Java. Abaixo deixo o link do desafio para que você posso lê-lo e realizá-lo também
 
 
 [Desafio Backend Java Itaú](https://github.com/feltex/desafio-itau-backend/tree/main)
