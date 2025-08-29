@@ -1,0 +1,30 @@
+package br.com.luizdev.desafioitau.estatistica;
+
+import lombok.Getter;
+
+import java.util.DoubleSummaryStatistics;
+
+@Getter
+public class EstatisticaDTO {
+
+    private final long count;
+    private final Double sum;
+    private final Double min;
+    private final Double max;
+    private final Double avg;
+
+
+    public EstatisticaDTO() {
+        this(new DoubleSummaryStatistics());
+    }
+
+    public EstatisticaDTO(final DoubleSummaryStatistics doubleSummaryStatistics) {
+        this.count = doubleSummaryStatistics.getCount();
+        this.sum = doubleSummaryStatistics.getSum();
+        this.min = doubleSummaryStatistics.getMin() == Double.POSITIVE_INFINITY ? 0 : doubleSummaryStatistics.getMin();
+        this.max = doubleSummaryStatistics.getMax() == Double.NEGATIVE_INFINITY ? 0 : doubleSummaryStatistics.getMax();
+        this.avg = doubleSummaryStatistics.getAverage();
+    }
+
+
+}

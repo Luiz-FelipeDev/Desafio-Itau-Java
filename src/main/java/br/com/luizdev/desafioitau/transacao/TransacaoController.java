@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 @RestController
-@RequestMapping(value = "/transacao", produces = MediaType.APPLICATION_JSON_VALUE, consumes =  MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/transacao", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 @Slf4j
 public record TransacaoController(TransacaoRepository transacaoRepository) {
 
